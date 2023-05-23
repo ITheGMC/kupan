@@ -22,7 +22,7 @@
   align-items: center;
   text-align: center;
   place-content: center;
-  display: flex;
+  display: none;
 }
 .top_nav span {
   font-size: 21px;
@@ -271,9 +271,7 @@ ul{
   .bgg {
     display: none;
   }
-  .bggm {
-    
-  }
+  
   #product_container {
     width: 15%; height: 15%;
   }
