@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head><link rel="icon" type="image/png" href="assets/images/coup.png">
+        <link rel="stylesheet" type="text/css" href="css/signin.css">
+        <script src="signin.js"></script>
+        <title>
+            Signin
+        </title>
+    </head>
+    <body onload="subm()">
+        <style>
+       body {
+                background-image: url('assets/images/logbg.jpg');
+            }
+            #fnaa {
+                background-image: url('assets/images/user.png');
+            }
+            #mall {
+                background-image: url('assets/images/mail.png');
+            }
+            #powd {
+                background-image: url('assets/images/lock.png');
+            }
+            #pawdie {
+                background-image: url('assets/images/lock.png');
+            }
+        </style>
+       <div class="cont_signin">
+        <a href="https://www.instagram.com/code_black62/" target="_blank"><img class="insta_icon" src="assets/images/icons/instagram_outline.png" width="2%"></a>
+        <a href="https://www.youtube.com/@otluckyff5477" target="_blank"><img class="yt_icon" src="assets/images/icons/youtube_outline.png" width="2.34%"></a>
+        <img class="tw_icon" src="assets/images/icons/twitter_outline.png" width="2.34%">
+        <a href="https://github.com/chandugollakoti-byte" target="_blank"><img class="gh_icon" src="assets/images/icons/github.png" width="2.34%"></a>
+        <a href="https://discord.gg/vQJxFaJraa" target="_blank"><img class="dc_icon" src="assets/images/icons/discord_filled.png" width="2.34%"></a>
+
+
+        <img class="log_bg" src="assets/images/loginbg.png" width="55%" height="100%">
+        
+        <form id="signform" action="signin.php" method="post">
+
+            <label for="uname">
+                <span class="un">Username</span>
+            </label>
+
+            <input autocomplete="off" id="fnaa" type="text" autofocus placeholder="Example: John" required name="username">
+
+            <label for="mail">
+                <span class="malli">Enter Your E-Mail</span>
+            </label>
+
+            <input autocomplete="off" id="mall" type="email" placeholder="Someone@example.com" required name="email">
+<!--
+          <label for="gender">
+            <select name="gender" id="gender">
+                <option value="S" selected disabled>Choose your Gender</option>
+                <option value="M" name="gender" >Male</option>
+                <option value="F" name="gender">Female</option>
+                <option value="O" name="gender">Others</option>
+            </select>
+          </label>
+          
+        </label>-->
+            <label for="pawd">
+                <span class="cpws">Choose Password</span>
+            </label>
+
+            <input autocomplete="off" id="powd" type="password" required placeholder="**********" >
+
+            <label for="pawwd">
+                <span class="rpwsd">Repeat Password</span>
+            </label>
+
+            <input autocomplete="off" id="pawdie" type="password" placeholder="Repeat ***********" required name="password">
+
+<span onclick="window.open('login.html', '_self');" class="iw">Already Have an account?</span>
+
+<input type="checkbox" id="agree" required><span class="agree_txt">By Signing in, You Agree with our Terms and Conditions, Privacy Policy & Eula</span>
+
+            <button onclick="validate_equi()" id="sbm" type="submit">SUBMIT</button>
+        </form>
+       </div>
+    </body>
+</html>

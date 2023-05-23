@@ -1,0 +1,198 @@
+@font-face {
+    font-family: Montserrat;
+    src: url('../fonts/montserrat/Montserrat-Regular.ttf');
+}
+@font-face {
+    font-family: Poppins;
+    src: url('../fonts/poppins/Poppins-Bold.ttf');
+}
+@font-face {
+    font-family: CHAWP;
+    src: url('../fonts/chawp/chawp.ttf');
+}
+body {
+    background-image: url('assets/images/board.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 100% 5%;
+    }
+#kpn {
+position: absolute;
+left: 20%;
+top: 20%;
+}
+.login_form_container {
+background:none;
+position: absolute;
+height: 85%;
+width: 80%;
+top: 10%;
+left: 10%;
+border-radius: 10px;
+}
+.login_form_container input {
+position: absolute;
+left: 60%;
+border-bottom: 1px solid #000;
+border-top: none;
+border-left: none;
+border-right: none;
+outline: none;
+background: none;
+padding-left: 100px;
+padding-top: 12px;
+padding-bottom: 12px;
+font-size: 20px;
+width: 30%;
+color: #fff;
+font-family: CHAWP;
+}
+::placeholder {
+color: #fff;
+}
+#usr {
+top: 30%;
+background-image: url('/assets/images/user.png');
+background-repeat: no-repeat;
+background-size: 8%;
+background-position: 5%;
+}
+#pwd {
+top: 50%;
+background-image: url('/assets/images/icons/lock_icon.png');
+background-repeat: no-repeat;
+background-size: 8%;
+background-position: 5%;
+}
+#sbm {
+top: 70%;
+padding: 10px 15px;
+border-radius: 8px;
+width: 15%;
+left: 75%;
+background-color: #82204A;
+color: #fff;
+cursor: pointer;
+}
+.head_text {
+font-family: Poppins;
+position: absolute;
+left: 70%;
+top: 10%;
+font-size: 33px;
+color: #E8DB7D;
+padding: 20px 30px;
+border-radius: 10px;
+font-family: CHAWP;
+font-weight: bold;
+}
+.head_text:hover {
+cursor: pointer;
+}
+.hor_line {
+position: absolute;
+left: 54%;
+top: 10%;
+width: 2px;
+height: 80%;
+background-color: #000;
+}
+.tag_line {
+font-family: CHAWP;
+position: absolute;
+color: #fff;
+top: 45%;
+font-size: 40px;
+left: 3%;
+}
+.insta_icon {
+position: absolute;
+left: 16%;
+bottom: 25%;
+}
+.yt_icon {
+position: absolute;
+left: 20%;
+bottom: 25%;
+}
+.tw_icon {
+position: absolute;
+left: 24%;
+bottom: 25%;
+}
+.gh_icon {
+position: absolute;
+left: 28%;
+bottom: 25%;
+}
+.dc_icon {
+position: absolute;
+left: 32%;
+bottom: 25%;
+}
+.sgn_bruh {
+position: absolute;
+bottom: 25%;
+color: #fff;
+right: 30%;
+font-size: 20px;
+font-family: Montserrat;
+}
+.sgn_bruh:hover {
+text-decoration: underline;
+cursor: pointer;
+}
+input:active {
+background: none;
+}
+@media (max-width:600px) {
+    body {
+        background-color: #000;
+        background-image: none;
+    }
+    #kpn {
+        top: 1%;
+        left: 3%;
+    }
+    .tag_line {
+        font-size: 20px;
+        top: 10%;
+    }
+    .hor_line {
+        display: none;
+    }
+    .head_text {
+        left: 0;
+        top: 20%;
+    }
+    input {
+        left: 5%;
+        background-color: #efefef;
+    }
+    #sbm {
+        left: 35%;
+        width: 25%;
+        top: 85%;
+    }
+    .sgn_bruh {
+        right: 5%;
+        bottom: 10%;
+    }
+    #rem {
+        display: none;
+    }
+    input[type="checkbox"] {
+        display: none;
+    }
+    #usr, #pwd {
+        background-color: #efefef;
+        left: 5%;
+        width: 60%;
+        margin-top: 30px;
+        border-radius: 8px;
+        font-size: 16px;
+    }
+    ::placeholder {
+        color: #000;
+    }
+}

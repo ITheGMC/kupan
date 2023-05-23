@@ -1,0 +1,212 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Chivo+Mono:ital,wght@1,100&family=Lato:wght@300&family=Montserrat:wght@300&family=Mukta:wght@300&family=Nunito+Sans&family=Nunito:wght@300&family=Poppins:wght@200&family=Rajdhani:wght@500&family=Source+Serif+Pro:ital,wght@1,200;1,400&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Chivo+Mono:ital,wght@1,100&family=Mukta:wght@300&family=Nunito+Sans&family=Nunito:wght@300&family=Poppins:wght@200&family=Rajdhani:wght@500&family=Source+Serif+Pro:ital,wght@1,200;1,400&display=swap');       
+  @import url('https://fonts.googleapis.com/css2?family=Chivo+Mono:ital,wght@1,100&family=Lato:wght@300&family=Mukta:wght@300&family=Nunito+Sans&family=Nunito:wght@300&family=Poppins:wght@200&family=Rajdhani:wght@500&family=Source+Serif+Pro:ital,wght@1,200;1,400&display=swap');
+  @font-face {
+    font-family: Montserrat;
+    src: url('/fonts/montserrat/Montserrat-Regular.ttf');
+  }
+body {
+                background-image: url('assets/images/logbg.jpg');
+            }
+  body {
+background-image: url("/assets/images/logbg.jpg");
+background-repeat: no-repeat;
+background-size: 100% ;
+background-position: 5% 15%;
+font-family: Montserrat;
+}
+.cont_signin {
+background-color: #f9f6f6;
+height: 90%;
+box-shadow: 4px 6px 8px #373737;
+width: 60%;
+position: absolute;
+left: 20%;
+top: 5%;
+border-radius: 3px;
+}
+.cont_signin span {
+font-weight: bold;
+}
+input {
+padding: 15px 20px;
+outline: none;
+width: 25%;
+padding-left: 50px;
+border-left: none;
+border-top: none;
+border-right: none;
+border-bottom: 1px solid #000;
+background: none;
+font-family: Montserrat;
+}
+form span {
+color: #876734;
+}
+.un {
+position: absolute;
+top: 10%;
+right: 32%;
+}
+#fnaa {
+position: absolute;
+top: 15%;
+right: 5%;
+background-image: url('/assets/images/user.png');
+background-repeat: no-repeat;
+background-position: 5% 50%;
+background-size: 6.5%;
+}
+.malli {
+position: absolute;
+top: 25%;
+right: 26%;
+}
+#mall {
+position: absolute;
+top: 30%;
+right: 5%;
+background-image: url('/assets/images/mail.png');
+background-repeat: no-repeat;
+background-position: 5% 50%;
+background-size: 6.5%;
+}
+.cpws {
+position: absolute;
+top: 40%;
+right: 26%;
+}
+#powd {
+position: absolute;
+top: 45%;
+right: 5%;
+background-image: url('/assets/images/lock.png');
+background-repeat: no-repeat;
+background-position: 5% 50%;
+background-size: 6.5%;
+}
+.rpwsd {
+position: absolute;
+top: 55%;
+right: 26%;
+}
+#pawdie {
+position: absolute;
+top: 60%;
+right: 5%;
+background-image: url('/assets/images/lock.png');
+background-repeat: no-repeat;
+background-position: 5% 50%;
+background-size: 6.5%;
+}
+#sbm {
+position: absolute;
+bottom: 3%;
+width: 20%;
+right: 15%;
+color: #fff;
+padding: 15px 25px;
+background-color: #38D2D2;
+background-image: radial-gradient(93% 87% at 87% 89%, rgba(0, 0, 0, 0.23) 0%, transparent 86.18%), radial-gradient(66% 66% at 26% 20%, rgba(255, 255, 255, 0.55) 0%, rgba(255, 255, 255, 0) 69.79%, rgba(255, 255, 255, 0) 100%);
+box-shadow: inset -3px -3px 9px rgba(255, 255, 255, 0.25), inset 0px 3px 9px rgba(255, 255, 255, 0.3), inset 0px 1px 1px rgba(255, 255, 255, 0.6), inset 0px -8px 36px rgba(0, 0, 0, 0.3), inset 0px 1px 5px rgba(255, 255, 255, 0.6), 2px 19px 31px rgba(0, 0, 0, 0.2);
+border-radius: 14px;
+font-weight: bold;
+font-size: 16px;
+border: 0;
+user-select: none;
+-webkit-user-select: none;
+touch-action: manipulation;
+cursor: pointer;
+}
+.iw {
+position: fixed;
+bottom: 16%;
+left: 32%;
+color: #f00;
+text-decoration: underline;
+cursor: pointer;
+}
+.agree_txt {
+position: absolute;
+bottom: 13.5%;
+left: 60%;
+word-wrap: break-word;
+font-size: 13px;
+}
+input[type="checkbox"] {
+position: absolute;
+cursor: pointer;
+color: #f00;
+background-color: #f00;
+border: 3px solid #f00;
+left: 45%;
+bottom: 15%;
+}
+#gender {
+position: absolute;
+top: 40%;
+left: 65%;
+}
+.insta_icon {
+position: absolute;
+left: 20%;
+bottom: 4%;
+}
+.yt_icon {
+position: absolute;
+left: 24%;
+bottom: 3.8%;
+}
+.tw_icon {
+position: absolute;
+left: 28%;
+bottom: 3.8%;
+}
+.gh_icon {
+position: absolute;
+left: 32%;
+bottom: 3.8%;
+}
+.dc_icon {
+position: absolute;
+left: 36%;
+bottom: 3.8%;
+}
+@media (max-width:600px) {
+  .log_bg {
+    display: none;
+  }
+  body {
+    background-color: #000;
+    background-image: none;
+  }
+  form span {
+    left: 15%;
+    color: #000;
+  }
+  form input {
+    left: 15%;
+    width: 50%;
+  }
+  .cont_signin {
+    width: 85%;
+    left: 8%;
+  }
+  a img, .tw_icon {
+    display: none;
+  }
+  #sbm {
+    left: 35%;
+    width: 25%;
+  }
+  .agree_txt {
+    word-wrap: normal;
+    width: 60%;
+    left: 18%;
+    top: 75%;
+  }
+  input[type = "checkbox"] {
+    left: 0;
+  }
+}
