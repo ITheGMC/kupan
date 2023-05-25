@@ -22,7 +22,7 @@
   align-items: center;
   text-align: center;
   place-content: center;
-  display: none;
+  display: flex;
 }
 .top_nav span {
   font-size: 21px;
