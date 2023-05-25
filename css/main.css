@@ -241,6 +241,8 @@ color: #fff;
   align-items: center;
   height: 200px;
   padding: 20px;
+  width: 25%;
+  left: 35%;
   border-radius: 10px;
   border: 2px dashed #555;
   color: #444;
