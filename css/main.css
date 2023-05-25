@@ -85,51 +85,6 @@ place-items: center;
 display: flex;
 color: #fff;
 }
-.upload {
-  cursor: pointer;
-border: 5px dashed #454545;
-background: none;
-width: 25%;
-height: 30%;
-position: fixed;
-top: 35%;
-left: 35%;
-align-items: center;
-text-align: center;
-place-items: center;
-display: flex;
-justify-content: center;
-color: #4e4d4d;
-}
-.up_btn {
-position: relative;
-margin-bottom: 1%;
-margin-left: 5%;
-justify-content: end;
-}
-#upld {
-color: #0a778a;
-margin-left: 15%;
-word-wrap: break-word;
-}
-#preview {
-align-items: center;
-text-align: center;
-place-items: center;
-display: flex;
-justify-content: center;
-margin-top: 35%;
-position: absolute;
-margin-left: 35%;
-width: 15%;
-}
-#preview img {
-width: 80%;
-position: absolute;
-top: 75%;
-left: 35%;
-height: auto;
-}
 #men {
 color: #fff;
 margin-left: 2%;
