@@ -7,7 +7,7 @@ background-color: #efefef;
 #username {
 background:none;
 border: none;
-color: #F4B400;
+color: #24262b;
 position: fixed;
 left: 93%;
 font-size: 19px;
@@ -16,7 +16,7 @@ font-size: 19px;
 position: absolute;
 right: 8%;
 font-size: 33px;
-color: #F4B400;
+color: #24262b;
 font-weight: 250;
 }
 .xx {
@@ -28,7 +28,7 @@ position: absolute;
 position: absolute;
 right: 12%;
 width: 25%;
-border: 1px solid #F4B400;
+border: 1px solid #24262b;
 outline: none;
 padding: 10px 20px 10px 20px;
 border-radius: 14px;
@@ -126,14 +126,14 @@ left: 35%;
 height: auto;
 }
 #men {
-color: #F4B400;
+color: #24262b;
 margin-left: 2%;
 }
 .material-symbols-outlined {
 cursor: pointer;
 }
 .ls_1{
-background-color: #F4B400;
+background-color: #24262b;
 width: 8%;
 height: 3%;
 position: fixed;
@@ -157,7 +157,7 @@ border-top-right-radius: 600px;
 
 .ls_2 {
 top: 28%;
-background-color: #F4B400;
+background-color: #24262b;
 width: 8%;
 height: 3%;
 position: fixed;
@@ -176,7 +176,7 @@ box-shadow: 2px 4px 4px #969696;
 }
 .ls_3 {
 top: 36%;
-background-color: #F4B400;
+background-color: #24262b;
 width: 8%;
 height: 3%;
 position: fixed;
@@ -196,7 +196,7 @@ box-shadow: 2px 4px 4px #969696;
 }
 .ls_4 {
 top: 44%;
-background-color: #F4B400;
+background-color: #24262b;
 width: 8%;
 height: 3%;
 position: fixed;
