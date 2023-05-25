@@ -78,6 +78,7 @@ text-align: center;
 user-select: none;
 place-items: center;
 display: flex;
+color: #fff;
 }
 .upload {
   cursor: pointer;
