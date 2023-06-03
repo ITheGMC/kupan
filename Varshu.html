@@ -8,7 +8,7 @@
 <h2 class="q1">
     Do you hate GMC?
 </h2>
-<button onclick="window.location.reload()" id="yes">YES</button>
+<button onclick="change()" id="yes">YES</button>
 <button onclick="alert('I know you like me 😉')" id="no">NO</button>
 
 <script>
@@ -16,6 +16,9 @@
   
 function change() {
     var yes = document.getElementById('yes');
+
+    alert("You'll be redirected to HELL!!!, Please wait a moment 😈");
+    window.open(`https://api.whatsapp.com/send?phone=919700608333`, '_blank');
 
     
  
