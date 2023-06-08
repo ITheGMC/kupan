@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+
+        </title>
+    </head>
+    <body>
+        
+        <input type="number" id="fifth" placeholder="5th sem CGPA not gpa" required><br><br>
+        <label><h3>Enter Grade Points for your Corresponding subjects, Ex: 9</h3></label>
+        <input id="oose" type="number" placeholder="OOSE" required>
+        <input id="web" type="number" placeholder="Web" required>
+        <input id="php" type="number" placeholder="php" required>
+        <input id="oe" type="number" placeholder="Open Elective" required>
+        <input id="elective" type="number" placeholder="Elective" required>
+        <input id="techskill" type="number" placeholder="technical skills" required>
+        <input id="softskills" type="number" placeholder="softskills" required>
+        <input id="ooselab" type="number" placeholder="oose lab" required>
+        <input id="weblab" type="number" placeholder="web lab" required>
+        <input id="minipro" type="number" placeholder="mini project" required><br><br><br>
+
+<button onclick="calcar()">GMC calculate this bruh :/</button>
+
+
+<input id="walue" placeholder="5th cgpa * 120" >
+<input id="giga" placeholder="6th sem total credpoints" >
+<input id="final" placeholder="GMC said this" >
+<input id="phinal" >
+
+<script>
+    function calcar() {
+
+        
+
+document.getElementById('walue').value = document.getElementById('fifth').value*120;
+
+x = document.getElementById('oose').value * 4;
+
+y = document.getElementById('web').value * 3;
+a = document.getElementById('php').value * 3;
+b = document.getElementById('oe').value * 3;
+c = document.getElementById('elective').value * 3;
+d = document.getElementById('techskill').value * 1;
+e = document.getElementById('softskills').value * 1;
+f = document.getElementById('ooselab').value * 1;
+g = document.getElementById('weblab').value * 1;
+h = document.getElementById('minipro').value * 1;
+
+
+document.getElementById('giga').value = x + y + a + b + c + d + e + f + g + h;
+
+i = document.getElementById('walue').value * 1;
+j = document.getElementById('giga').value *1;
+
+document.getElementById('final').value = (i + j)/141;
+        
+    }
+</script>
+    </body>
+</html>
