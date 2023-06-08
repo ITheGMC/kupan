@@ -2,12 +2,15 @@
 <html>
     <head>
         <title>
-
+CGPA by GMC
         </title>
     </head>
     <body>
+
+
+        <h1 style="color: grey"> GMC made this nigga, would you like to take him to coffee? :0</h1>
         
-        <input type="number" id="fifth" placeholder="5th sem CGPA not gpa" required><br><br>
+        <input type="number" id="fifth" placeholder="Enter 5th sem CGPA not gpa" required><br><br>
         <label><h3>Enter Grade Points for your Corresponding subjects, Ex: 9</h3></label>
         <input id="oose" type="number" placeholder="OOSE" required>
         <input id="web" type="number" placeholder="Web" required>
@@ -23,10 +26,9 @@
 <button onclick="calcar()">GMC calculate this bruh :/</button>
 
 
-<input id="walue" placeholder="5th cgpa * 120" >
-<input id="giga" placeholder="6th sem total credpoints" >
-<input id="final" placeholder="GMC said this" >
-<input id="phinal" >
+<input id="walue" placeholder="5th cgpa * 120" hidden >
+<input id="giga" placeholder="6th sem total credpoints" hidden>
+<input id="final" placeholder="GMC says your final CGPA here" >
 
 <script>
     function calcar() {
@@ -53,9 +55,11 @@ document.getElementById('giga').value = x + y + a + b + c + d + e + f + g + h;
 i = document.getElementById('walue').value * 1;
 j = document.getElementById('giga').value *1;
 
-document.getElementById('final').value = (i + j)/141;
+k = document.getElementById('final').value = (i + j)/141;
         
-    }
+alert('Your CGPA for all SEX SEMESTERS is  ' +  k);
+
+}
 </script>
     </body>
 </html>
