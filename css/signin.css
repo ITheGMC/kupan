@@ -95,6 +95,7 @@
 }
 #submit:hover, #login:hover {
     background-color: #101935;
+    
     color: #fff;
     cursor: pointer;
     border: none;
