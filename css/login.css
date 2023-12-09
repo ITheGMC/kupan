@@ -110,3 +110,9 @@ a {
     justify-content: center;
     cursor: pointer;
 }
+.login_text {
+    position: absolute;
+    color: #101935;
+    font-size: 25px;
+    top: 35%;
+}
