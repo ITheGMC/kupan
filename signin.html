@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Signin
+        </title>
         <link rel="icon" type="image/png" href="assets/images/coup.png">
-        <link rel="stylesheet" href="css/login.css" type="text/css">
-        <title>Login</title>
+        <link rel="stylesheet" href="css/signin.css" type="text/css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
         <style>
@@ -19,39 +21,29 @@
 #password {
     top: 55%;
     background-image: url('assets/images/lock.png');
-}@media only screen and (max-width: 767px) {
-    #username {
-        top: 35%;
-    }
-    #password {
-        top: 50%;
-    }
-    .login input {
-        width: 35%;
-    }
 }
         </style>
- <!--Top Nav-->
+         <!--Top Nav-->
  <div class="top_nav">
-     <span class="site_name" onclick=" window.scrollTo({ top: 0, behavior: 'smooth' });">KUPAN</span>
-  </div>
+    <span class="site_name" onclick=" window.scrollTo({ top: 0, behavior: 'smooth' });">KUPAN</span>
+ </div>
 
 
-<div class="login">
-    <span class="login_text">LOG IN</span>
+<div class="register">
+    <span class="register_text">SIGN IN</span>
+    <form action="signin.php" method="post">
+        <input type="text" name="name" id="name" placeholder="your name" required>
+        <input type="text" name="username" id="user" placeholder="Username" required>
+        <input type="tel" name="number" id="number" placeholder="Phone number" required>
+        <input type="email" name="email" id="email" placeholder="Email" required>
+        <input type="password" name="passowrd" id="passcode" placeholder="Choose Password" required>
+        <button type="submit" id="submit">REGISTER</button>
+        <span class="or">or</span>
 
-<form action="login.php" method="post">
-    <input type="text" placeholder="Username" name="username" id="username" required>
-    <input type="password" placeholder="Password" name="password" id="password" required>
-    <span class="forgot">Forgot Username/Password?</span>
-    <button type="submit" id="submit">LOGIN</button>
-    <span class="or">or</span>
-</form>
-
-<a href="signin.html" target="_self"><button id="register">REGISTER</button></a>
-
-
+    </form>
+    <a href="login.html" target="_self"><button id="login">LOGIN</button></a>
 </div>
+
 
 
 
@@ -90,6 +82,13 @@
     
 
 </div>
+
+
+
+
+
+
+
 
 
     </body>

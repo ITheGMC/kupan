@@ -1,7 +1,4 @@
-@font-face {
-    font-family: Montserrat;
-    src: url('/assets/fonts/Montserrat-Regular.ttf');
-}
+
 * {
     font-family: Montserrat;
 }
@@ -300,9 +297,9 @@ li {
 }
 .insta_follow {
     position: absolute;
-    left: 7%;
+    left: 5%;
     top: 60%;
-    width: 10%;
+    width: 15%;
     background-color: #0095f6;
     border: none;
     border-radius: 4px;
