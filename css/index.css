@@ -1,10 +1,10 @@
 @font-face {
     font-family: CharletComprime CologneSixty;
-    src: url('/assets/fonts/ChaletComprime\ CologneSixty.ttf');
+    src: url('assets/fonts/ChaletComprime\ CologneSixty.ttf');
 }
 @font-face {
     font-family: Chalet LondonNinteenSixty;
-    src: url('/assets/fonts/Chalet\ LondonNineteenSixty\ Regular.otf');
+    src: url('assets/fonts/Chalet\ LondonNineteenSixty\ Regular.otf');
 }
 ::-webkit-scrollbar {
     display: none;
