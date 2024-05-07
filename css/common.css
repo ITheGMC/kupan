@@ -1,0 +1,281 @@
+:root {
+    --discordfont: gg Sans;
+    --background: #E7F6FE;
+    --color9: #002538;
+    --color8: #004466;
+    --color7: #026597;
+    --color6: #1285BF;
+    --color5: #2BAAEA;
+    --color4: #55C1F7;
+    --color3: #81D4FD;
+    --color2: #B4E5FD;
+    --color1: #E7F6FE;
+    --darktext: #002538;
+    --lighttext: #E7F6FE;
+    --darkmode: #2F3136;
+
+}
+@font-face {
+    font-family: gg Sans;
+    src: url('assets/fonts/gg\ sans\ Regular.ttf');
+}
+* {
+    font-family: var(--discordfont);
+    scroll-behavior: smooth;
+}
+::selection {
+  color: var(--color1);
+  background-color: var(--color5);
+}
+::-webkit-scrollbar {
+    display: none;
+}
+body {
+    background-color: var(--background);
+}
+/* TOP nav */
+.top_nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 10%;
+  background-color: var(--color9);
+  color: var(--color1);
+  z-index: 900;
+}
+#logo {
+  cursor: pointer;
+  width: 70px;
+  padding-left: 5%;
+}
+img {
+  user-select: none;
+}
+input:focus {
+  outline: 1.5px solid var(--color8);
+  color: var(--color5);
+}
+/*footer*/
+
+.footer {
+    position: absolute;
+    height: 40%;
+    width: 100%;
+    left: 0;
+    background-color: var(--color9);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    place-content: center;
+    place-items: center;
+    text-align: center;
+    align-items: center;
+}
+.foot {
+    position: absolute;
+    top: 20%;
+    left: 10%;
+}
+.copyright {
+    position: absolute;
+    top: 40%;
+    left: 10%;
+}
+.footer ul {
+    position: absolute;
+    left: 35%;
+    top: 15%;
+    list-style-type: square;
+    text-align: left;
+    justify-content: left;
+}
+.footer a {
+    justify-content: left;
+    text-align: left;
+}
+.footer li:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    color: var(--color5);
+}
+.social_icons {
+    width: 2%;
+    position: absolute;
+    cursor: pointer;
+}
+#insta_icon {
+    left: 65%;
+}
+#twitter_icon {
+    left: 69%;
+}
+#whatsapp_icon {
+    left: 73%;
+}
+#discord_icon {
+    left: 77%;
+}
+#mail_icon {
+    left: 81%;
+}
+
+a {
+    text-decoration: none;
+    display: flex;
+    place-content: center;
+    place-items: center;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.footer a {
+    color: var(--color1);
+}
+
+.text_info a {
+    color: #000;
+}
+.footer a:hover {
+  color: var(--color5);
+}
+
+
+
+@media screen and (max-width: 780px) {
+.footer {
+    height: 80%;
+}
+.footer ul {
+    top: 40%;
+    left: 10%;
+}
+.copyright {
+    top: 30%;
+}
+.social_icons {
+    width: 5%;
+    top: 88%;
+}
+#insta_icon {
+    left: 15%;
+}
+#twitter_icon {
+    left: 25%;
+}
+#discord_icon {
+    left: 35%;
+}
+#whatsapp_icon {
+    left: 45%;
+}
+#mail_icon {
+    left: 55%;
+}
+.lis {
+    display: none;
+}
+}
+
+
+.loader {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: 9000;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lds-spinner,
+.lds-spinner div,
+.lds-spinner div:after {
+  box-sizing: border-box;
+}
+.lds-spinner {
+  color: var(--color1);
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+
+}
+.lds-spinner div {
+  transform-origin: 40px 40px;
+  animation: lds-spinner 1.2s linear infinite;
+}
+.lds-spinner div:after {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 3.2px;
+  left: 36.8px;
+  width: 6.4px;
+  height: 17.6px;
+  border-radius: 20%;
+  background: var(--color1);
+}
+.lds-spinner div:nth-child(1) {
+  transform: rotate(0deg);
+  animation-delay: -1.1s;
+}
+.lds-spinner div:nth-child(2) {
+  transform: rotate(30deg);
+  animation-delay: -1s;
+}
+.lds-spinner div:nth-child(3) {
+  transform: rotate(60deg);
+  animation-delay: -0.9s;
+}
+.lds-spinner div:nth-child(4) {
+  transform: rotate(90deg);
+  animation-delay: -0.8s;
+}
+.lds-spinner div:nth-child(5) {
+  transform: rotate(120deg);
+  animation-delay: -0.7s;
+}
+.lds-spinner div:nth-child(6) {
+  transform: rotate(150deg);
+  animation-delay: -0.6s;
+}
+.lds-spinner div:nth-child(7) {
+  transform: rotate(180deg);
+  animation-delay: -0.5s;
+}
+.lds-spinner div:nth-child(8) {
+  transform: rotate(210deg);
+  animation-delay: -0.4s;
+}
+.lds-spinner div:nth-child(9) {
+  transform: rotate(240deg);
+  animation-delay: -0.3s;
+}
+.lds-spinner div:nth-child(10) {
+  transform: rotate(270deg);
+  animation-delay: -0.2s;
+}
+.lds-spinner div:nth-child(11) {
+  transform: rotate(300deg);
+  animation-delay: -0.1s;
+}
+.lds-spinner div:nth-child(12) {
+  transform: rotate(330deg);
+  animation-delay: 0s;
+}
+@keyframes lds-spinner {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
