@@ -1,370 +1,151 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Start</title>
-    <link rel="stylesheet" href="css/index.css" type="text/css">
-    <style>
-@font-face {
-    font-family: CharletComprime CologneSixty;
-    src: url('assets/fonts/ChaletComprime\ CologneSixty.ttf');
-}
-@font-face {
-    font-family: Chalet LondonNinteenSixty;
-    src: url('assets/fonts/Chalet\ LondonNineteenSixty\ Regular.otf');
-}
-.active {
-    border-top-color: rgb(0, 150, 245); 
-    color: #000;
-    background-color: #fff;
-}
-.active2 {
-    color: #000;
-    background-color: #fff;
-}
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <link rel="shortcut icon" href="assets/images/logo/transperant logo.png" type="image/x-icon">
+        <link rel="stylesheet" href="css/index.css" type="text/css">
+        <link rel="stylesheet" href="css/common.css" type="text/css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Welcome Kapitan</title>
+        <style>
+            @font-face {
+                font-family: gg Sans;   
+                src: url(assets/fonts/gg\ sans\ Regular.ttf);
+            }
+            * {
+                font-family: gg Sans;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- TOP NAV -->
+        <div class="top_nav">
+            <!-- logo -->
+            <img onclick="location.reload()" src="assets/images/kupan_logo_white.png" alt="logo" id="logo">
 
-    </style>
-</head>
-<body>
-
-
-    <img src="assets/pics/GMCbg.jpg" width="100%" id="bale">
-    <div class="dark">
-        <img src="assets/pics/GMC.jpg" width="5%" height="12%" class="pic">
-        <span class="nam">G.V.S.S.M.Chandu</span>
-        <span class="nik">GMC</span>
-        <input id="dateinf" readonly>
-        <span class="what">STUDENT</span>
-    </div>
-
-    <div class="tab_bar">
-        <div class="tab info active" data-tab="info" onclick="toggleTab(this)">INFO</div>
-        <div class="tab edu" data-tab="edu" onclick="toggleTab(this)">EDUCATION</div>
-        <div class="tab skill" data-tab="skills" onclick="toggleTab(this)">SKILLS</div>
-        <div class="tab proj" data-tab="proj" onclick="toggleTab(this)">PROJECTS</div>
-        <div class="tab exp" data-tab="exp" onclick="toggleTab(this)">EXPERIENCE</div>
-        <div class="tab certs" data-tab="certs" onclick="toggleTab(this)">AWARDS</div>
-        <div class="tab hobb" data-tab="hobb" onclick="toggleTab(this)">HOBBIES</div>
-        <div class="tab social" data-tab="social" onclick="toggleTab(this)">SOCIAL</div>
-    </div>
-
-    <div class="masked"></div>
-
-    <span class="lf"> &lt;</span>
-    <span class="rf"> &gt;</span>
-
-
-
-    <div id="info" class="tab-content">
-        <!-- Info Content comes here -->
-        <div class="subtab lyn1 active2" data-tab="naam" onclick="toggleSubTab(this, 'info')"><span class="naam">Name</span></div>
-        <div class="subtab lyn2" data-tab="sex" onclick="toggleSubTab(this, 'info')"><span class="age">Age</span></div>
-        <div class="subtab lyn3" data-tab="mail" onclick="toggleSubTab(this, 'info')"><span class="mail">Mail</span></div>
+            <!-- category -->
         
+            <div class="list-things">
+                <span class="cat">CATEGORIES</span>
+                <ul id="list" onclick="window.location.href='login.html';">
+                    <li>Fashion</li>
+                    <li>Food</li>
+                    <li>Beauty</li>
+                    <li>Travel</li>
+                    <li>Entertainment</li>
+                </ul>
+            </div>
+            <!-- button -->
+            <button onclick="window.location.href='login.html';" class="bt-login">SIGNIN / LOGIN</button>
+        </div>
 
-<div class="subtab-content"><h1 class="texx">GOLLA</h1></div>
+
+        <!-- SECTION I  -->
+
+        <section id="zero">
+            <img src="assets/images/logo/black circle.png" alt="logo" id="mobile_logo">
+            <h3>SAVE MORE</h3>
+            <h2>BY BROWSING MORE</h2>
+            <p>Welcome aboard, sit back, relax and just start browsing the coupons from your favourite sites. Of course we will bring you your favourites sooner or later, so simply stick with us.</p><br><br>
+            <button class="more" onclick="window.scrollTo({ top: 800, behavior: 'smooth'});">Learn More</button>
+        </section>
 
 
+        <!-- SECTION II -->
+
+        <section id="one">
+            <h2>Trending Coupons</h2>
+<div class="boxes">
+    <div class="box one-box">
+        <img src="assets/images/zomato.svg" alt="zomato-logo" width="40%">
     </div>
-    
-<div class="masked_info"></div>
-
-
-    <div id="edu" class="tab-content" style="display: none;">
-        <!-- Education details here -->
-
-        <div class="subtab lyn1 active2" data-tab="naam" onclick="toggleSubTab(this, 'edu')"><span class="naam">University</span></div>
-        <div class="subtab lyn2" data-tab="sex" onclick="toggleSubTab(this, 'edu')"><span class="age">College</span></div>
-        <div class="subtab lyn3" data-tab="mail" onclick="toggleSubTab(this, 'edu')"><span class="mail">School</span></div>
- 
- <div class="subtab-content"><h1 class="texx">EDDU</h1></div>
-
-
+    <div class="box two-box">
+        <img src="assets/images/Lenskart-Logo.png" alt="Lenskart-Logo" width="40%">
     </div>
-    
-    <div id="skills" class="tab-content" style="display: none;">
-    <!-- Skills here -->
-
-
-
-    <div class="subtab lyn1 active2" data-tab="naam" onclick="toggleSubTab(this, 'skills')"><span class="naam">General</span></div>
-    <div class="subtab lyn2" data-tab="sex" onclick="toggleSubTab(this, 'skills')"><span class="age">Technical</span></div>
-    <div class="subtab lyn3" data-tab="mail" onclick="toggleSubTab(this, 'skills')"><span class="mail">Languages</span></div>
-
-<div class="subtab-content"><h1 class="texx">SKILL</h1></div>
+    <div class="box three-box">
+        <img src="assets/images/rapido.png" alt="rapido-logo" width="40%">
     </div>
-
-    <div id="proj" class="tab-content" style="display: none;">
-    
-        <!-- Projects -->
-
-        <div class="subtab lyn1 active2" data-tab="naam" onclick="toggleSubTab(this, 'proj')"><span class="naam">Small Tools</span></div>
-        <div class="subtab lyn2" data-tab="age" onclick="toggleSubTab(this, 'proj')"><span class="age">Mini Projects</span></div>
-        <div class="subtab lyn3" data-tab="mail" onclick="toggleSubTab(this, 'proj')"><span class="mail">Colleg Projects</span></div>
-    
-    <div class="subtab-content"><h1 class="texx">PROJEXX</h1></div>
-    
+    <div class="box four-box">
+        <img src="assets/images/swiggy.png" alt="swiggy-logo" width="40%">
     </div>
-
-    <div id="exp" class="tab-content" style="display: none;">
-    
-        <!-- Experience -->
-
-        <div class="subtab lyn1 active2" data-tab="naam" onclick="toggleSubTab(this, 'exp')"><span class="naam">Work 1</span></div>
-        <div class="subtab lyn2" data-tab="age" onclick="toggleSubTab(this, 'exp')"><span class="age">Work 2</span></div>
-        <div class="subtab lyn3" data-tab="mail" onclick="toggleSubTab(this, 'exp')"><span class="mail">Work 3</span></div>
-    
-    <div class="subtab-content"><h1 class="texx">WORK</h1></div>
-    
+    <div class="box five-box">
+        <img src="assets/images/dominos.png" alt="Dominos-logo"  width="40%">
     </div>
-
-    <div id="certs" class="tab-content" style="display: none;">
-    
-        <!-- Certificates or Awards -->
-
-
-        <div class="subtab lyn1 active2" data-tab="naam" onclick="toggleSubTab(this, 'certs')"><span class="naam">Certificates</span></div>
-        <div class="subtab lyn2" data-tab="age" onclick="toggleSubTab(this, 'certs')"><span class="age">Publications</span></div>
-        <div class="subtab lyn3" data-tab="mail" onclick="toggleSubTab(this, 'certs')"><span class="mail">Achievements</span></div>
-    
-    <div class="subtab-content"><h1 class="texx">Awards</h1></div>
-    
-
-    
+    <div class="box siz-box">
+        <img src="assets/images/oyo.svg" alt="oyo-logo"  width="40%">
     </div>
-
-    <div id="hobb" class="tab-content" style="display: none;">
-
-<!-- Hobbies -->
-
-<div class="subtab lyn1 active2" data-tab="naam" onclick="toggleSubTab(this, 'hobb')"><span class="naam">tab 1</span></div>
-<div class="subtab lyn2" data-tab="age" onclick="toggleSubTab(this, 'hobb')"><span class="age">tab 2</span></div>
-<div class="subtab lyn3" data-tab="mail" onclick="toggleSubTab(this, 'hobb')"><span class="mail">tab 3</span></div>
-
-<div class="subtab-content"><h1 class="texx">Hobbies</h1></div>
-
-
+    <div class="box seven-box">
+        <img src="assets/images/tatasky.png" alt="tatasky-logo"  width="40%">
     </div>
-
-    <div id="social" class="tab-content" style="display: none;">
-    
-    <!-- Social links -->
-
-    
-    <div class="subtab lyn1 active2" data-tab="naam" onclick="toggleSubTab(this, 'social')"><span class="naam">Instagram</span></div>
-    <div class="subtab lyn2" data-tab="age" onclick="toggleSubTab(this, 'social')"><span class="age">Twitter</span></div>
-    <div class="subtab lyn3" data-tab="mail" onclick="toggleSubTab(this, 'social')"><span class="mail">Discord</span></div>
-
-<div class="subtab-content"><h1 class="texx">SOCIALZZ</h1></div>
-
-
+    <div class="box right-box">
+        <img src="assets/images/tatasky.png" alt="tatasky-logo"  width="40%">
     </div>
+    <!-- <div class="box nine-box"></div> -->
+</div>
+        </section>
 
 
 
+
+        <!-- SECTION III -->
+        <section id="two">
+            <h3>ABOUT US</h3>
+            <p>We're dedicated to delivering excellence in every endeavor. With a foundation built on trust, innovation, and collaboration, we've been empowering our buds to reach their full potential to give you the absolute best.</p>
+            <div class="image-container"></div>
+
+        </section>
+
+
+
+        
+<!--footer-->
+
+<div class="footer" id="footer">
+    <span class="site_name foot" >KUPAN</span>
+    <span class="copyright">Copyright © GMC,inc 2023</span>
+
+<ul>
+    <a href="about/privacypolicy.html" target="_blank"><li>Privacy Policy</li></a><br>
+    <a href="about/eula.html" target="_blank"><li>Eula</li></a><br>
+    <a href="about/terms&conditions.html" target="_blank"><li>Terms and Conditions</li></a><br>
+    <a href="about/aboutus.html" target="_blank"><li>About Us</li></a>
+</ul>
+
+<a href="https://www.instagram.com/xgmc.in/" target="_blank">
+<img class="social_icons" src="https://www.kupan.site/assets/images/square-instagram.svg" id="insta_icon" draggable="false">
+</a>
+
+<a href="https://twitter.com/ITheGMC" target="_blank">
+<img class="social_icons" src="https://www.kupan.site/assets/images/twitter.svg" id="twitter_icon" draggable="false">
+</a>
+
+<a href="https://wa.me/+919700608333?text=Hey%20I%20Like%20your%20work" target="_blank">
+<img class="social_icons" src="https://www.kupan.site/assets/images/whatsapp.svg" id="whatsapp_icon" draggable="false">
+</a>
+
+<a href="https://discord.gg/yD695X9STs" target="_blank">
+<img class="social_icons" src="https://www.kupan.site/assets/images/discord.svg" id="discord_icon" draggable="false">
+</a>
+
+<a href="mailto:chandugollakoti2000@gmail.com" target="_blank">
+<img class="social_icons" src="https://www.kupan.site/assets/images/mail.svg" id="mail_icon" draggable="false">
+</a>
     
-    
-    <audio id="switchSound" src="assets/sounds/click.MP3"></audio>
-
-
-
-<!-- Bottom Nav Line -->
-<div class="bot_nav">
-
-    <span class="browse">Browse</span>
-    <div class="que">Q</div>    
-    <div class="eee">E</div>
-
-    <span class="select">Select</span>
-    <div class="que ent">&#9166;</div>
-
-    <span class="reload">Reload</span>
-    <div class="ctrl">CTRL + R</div> 
-
-    <span class="close">Close Tab</span>
-    <div class="cls">CTRL + W</div> 
-
 
 </div>
 
 
+<script>
+var x = document.getElementsByClassName('box');
 
-
-
-    <script>
-        var currentDate = new Date();
+for (var i = 0; i < x.length; i++) {
+    
+    x[i].addEventListener('click', function() {
         
-        var weekdays = ['SUNDAY', 'MONDAY', 'TUESDAY', 'WEDNESDAY', 'THURSDAY', 'FRIDAY', 'SATURDAY'];
-        var currentWeekday = weekdays[currentDate.getDay()];
-        
-        var hours = ('0' + currentDate.getHours()).slice(-2);
-        var minutes = ('0' + currentDate.getMinutes()).slice(-2);
-        
-        var formattedTime = hours + ":" + minutes ;
-        
-        document.getElementById("dateinf").value = currentWeekday + "    " + formattedTime;
-
-
-
-
-        document.querySelector('.lf').addEventListener('click', function() {
-    moveTab('left');
-});
-
-document.querySelector('.rf').addEventListener('click', function() {
-    moveTab('right');
-});
-
-
-
-
-
-
-
-function playSwitchSound() {
-    var switchSound = document.getElementById('switchSound');
-    switchSound.currentTime = 0;
-    switchSound.play();
+        location.href = "login.html";
+    });
 }
 
-
-
-function toggleSubTab(tab, parentTabContentId) {
-    var parentTabContent = document.getElementById(parentTabContentId);
-    var tabs = parentTabContent.querySelectorAll('.subtab');
-    var tabContents = parentTabContent.querySelectorAll('.subtab-content');
-
-    tabs.forEach(function(item) {
-        item.classList.remove('active2');
-    });
-
-    tabContents.forEach(function(content) {
-        content.style.display = 'none';
-    });
-
-    tab.classList.add('active2');
-
-    var tabName = tab.getAttribute('data-tab');
-    parentTabContent.querySelector('#' + tabName).style.display = 'block';
-
-    playSwitchSound();
-}
-
-document.addEventListener('keydown', function(event) {
-    playSwitchSound();
-
-    var key = event.key.toLowerCase();
-
-    if (key === 'arrowdown' || key === 'arrowup') {
-        event.preventDefault();
-
-        var activeSubTab = document.querySelector('.subtab.active2');
-        var parentTabContentId = activeSubTab.closest('.tab-content').id;
-
-        var subTabs = activeSubTab.parentElement.querySelectorAll('.subtab');
-        var activeIndex = Array.from(subTabs).indexOf(activeSubTab);
-
-        var newIndex;
-        if (key === 'arrowdown') {
-            newIndex = (activeIndex + 1) % subTabs.length;
-        } else {
-            newIndex = (activeIndex - 1 + subTabs.length) % subTabs.length;
-        }
-
-        toggleSubTab(subTabs[newIndex], parentTabContentId);
-    }
-});
-
-
-
-
-
-
-
-
-
-
-        function toggleTab(tab) {
-        var tabs = document.querySelectorAll('.tab');
-        var tabContents = document.querySelectorAll('.tab-content');
-
-        tabs.forEach(function(item) {
-            item.classList.remove('active');
-        });
-        tab.classList.add('active');
-
-        // Hide all tab contents
-        tabContents.forEach(function(content) {
-            content.style.display = 'none';
-        });
-
-        // Show corresponding tab content
-        var tabName = tab.getAttribute('data-tab');
-        document.getElementById(tabName).style.display = 'block';
-
-        // Play switch sound
-        var switchSound = document.getElementById('switchSound');
-        switchSound.currentTime = 0;
-        switchSound.play();
-    }
-
-    function moveTab(direction) {
-    var tabs = document.querySelectorAll('.tab');
-    var activeIndex = -1;
-
-    tabs.forEach(function(tab, index) {
-        if (tab.classList.contains('active')) {
-            activeIndex = index;
-        }
-    });
-
-    if (direction === 'left') {
-        tabs[activeIndex].classList.remove('active');
-        activeIndex = (activeIndex - 1 + tabs.length) % tabs.length;
-        tabs[activeIndex].classList.add('active');
-    } else if (direction === 'right') {
-        tabs[activeIndex].classList.remove('active');
-        activeIndex = (activeIndex + 1) % tabs.length;
-        tabs[activeIndex].classList.add('active');
-    }
-
-    // Hide all tab contents
-    var tabContents = document.querySelectorAll('.tab-content');
-    tabContents.forEach(function(content) {
-        content.style.display = 'none';
-    });
-
-    // Show corresponding tab content
-    var activeTab = document.querySelector('.tab.active');
-    var activeTabName = activeTab.getAttribute('data-tab');
-    document.getElementById(activeTabName).style.display = 'block';
-
-    // Play switch sound
-    var switchSound = document.getElementById('switchSound');
-    switchSound.currentTime = 0;
-    switchSound.play();
-
-    // Toggle active state for the tab
-    toggleTab(activeTab);
-}
-
-
-    document.addEventListener('keydown', function(event) {
-        var key = event.key.toLowerCase();
-
-        if (key === 'arrowleft') {
-            moveTab('left');
-        } else if (key === 'arrowright') {
-            moveTab('right');
-        } else if (key === 'q') {
-            moveTab('left');
-        } else if (key === 'e') {
-            moveTab('right');
-        }
-    });
-
-
-    </script>
-</body>
-</html>
+</script>
+    </body>
+    </html>
